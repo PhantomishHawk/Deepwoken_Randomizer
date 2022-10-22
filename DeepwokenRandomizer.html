@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Deepwoken Build Randomizer</title>
+
+  </head>
+  <body>
+    <header>
+    <h1><b>Randomize Your Attunement</b></h1>
+  </header>
+
+  <section>
+
+    <label>Attunements</label><br>
+    <button onclick="RandomizeX()">Randomize</button>
+
+    <p>Your Attunement Is:</p>
+    <p id="randomAttunement"></p>
+    <p id="currentNumber"></p>
+
+    <script>
+    const MyAttunementList = ["Galebreathe, Flamecharm", "Shadowcast", "Frostdraw", "Thundercall","Attunementless"]
+
+    RandomizeX()
+
+    function RandomizeX() {
+
+    var global = Math.random() * 60;
+
+    if (global<10, global>0) {
+       y = "Galebreathe"
+    }
+    if (global<20, global>10) {
+      y = "Flamecharm"
+    }
+    if (global<30, global>20) {
+      y = "Thundercall"
+    }
+    if (global<40, global>30) {
+      y = "Frostdraw"
+    }
+    if (global<50, global>40) {
+      y = "Shadowcast"
+    }
+    if (global<60, global>50) {
+      y = "Attunementless"
+    }
+    document.getElementById("randomAttunement").innerHTML = y;
+}
+  </script>
+
+
+
+
+
+  </section>
+
+<section>
+  <header>
+  <h1><b>Randomize Your Weapon Type</b></h1>
+</header>
+
+<section>
+
+  <label>Weapon Types</label><br>
+  <button onclick="RandomizeFunction2()">Randomize</button>
+
+  <p>Your Weapon type Is:</p>
+  <p id="randomWeapon"></p>
+
+  <script>
+  const myWeaponList = ["Dagger", "Rapier", "Fists", "Guns", "Greatsword", "Greataxe", "Greathammer", "Sword", "Club", "Spear"];
+
+  RandomizeFunction2()
+
+  function RandomizeFunction2() {
+    document.getElementById("randomWeapon").innerHTML = myWeaponList[Math.floor(Math.random() * myWeaponList.length)]
+  }
+  </script>
+</section>
+
+  <div>
+    <h1 class="randomNumEl"></h1>
+  </div>
+<section>
+  <header>
+    <h1><b>Randomize Your Core Attributes</b></h1>
+  </header>
+  <label>Attribute Points</label><br>
+  <button onclick="RandomizeFunction3()">Randomize</button>
+  <p>Your Strength Is:</p>
+  <p id="randomStrength"></p>
+
+  <script>
+  RandomizeFunction3()
+
+  function RandomizeFunction3() {
+    var x = Math.random() * 50;
+    if (x<10, x>0) {
+      z = 0
+    }
+    if (x<20, x>10) {
+      z = 25
+    }
+    if (x<30, x>20) {
+      z = 40
+    }
+    if (x<40, x>30) {
+      z = 60
+    }
+    if (x<50, x>40) {
+      z = 80
+    }
+    document.getElementById("randomStrength").innerHTML = z;
+}
+</script>
+<button onclick="RandomizeFunction4()">Randomize</button>
+<p>Your Fortitude Is:</p>
+<p id="randomFortitude"></p>
+
+<script>
+RandomizeFunction4()
+
+function RandomizeFunction4() {
+  var x = Math.random() * 30;
+  if (x<10, x>0) {
+    h = 0
+  }
+  if (x<20, x>10) {
+    h = 40
+  }
+  if (x<30, x>20) {
+    h = 90
+  }
+
+  document.getElementById("randomFortitude").innerHTML = h;
+}
+</script>
+<button onclick="RandomizeFunction5()">Randomize</button>
+<p>Your Agility Is:</p>
+<p id="randomAgility"></p>
+
+<script>
+RandomizeFunction5()
+
+function RandomizeFunction5() {
+  var x = Math.random() * 40;
+  if (x<10, x>0) {
+    j = 0
+  }
+  if (x<20, x>10) {
+    j = 25
+  }
+  if (x<30, x>20) {
+    j = 40
+  }
+  if (x<40, x>30) {
+    j = 65
+  }
+
+  document.getElementById("randomAgility").innerHTML = j;
+}
+
+</script>
+<button onclick="RandomizeFunction6()">Randomize</button>
+<p>Your Intelligence Is:</p>
+<p id="randomIntelligence"></p>
+
+<script>
+RandomizeFunction6()
+
+function RandomizeFunction6() {
+  var x = Math.random() * 40;
+  if (x<10, x>0) {
+    k = 0
+  }
+  if (x<20, x>10) {
+    k = 20
+  }
+  if (x<30, x>20) {
+    k = 40
+  }
+  if (x<40, x>30) {
+    k = 80
+  }
+
+  document.getElementById("randomIntelligence").innerHTML = k;
+}
+
+</script>
+
+<button onclick="RandomizeFunction7()">Randomize</button>
+<p>Your Willpower Is:</p>
+<p id="randomWillpower"></p>
+
+<script>
+RandomizeFunction7()
+
+function RandomizeFunction7() {
+  var x = Math.random() * 50;
+  if (x<10, x>0) {
+    l = 0
+  }
+  if (x<20, x>10) {
+    l = 20
+  }
+  if (x<30, x>20) {
+    l = 40
+  }
+  if (x<40, x>30) {
+    l = 50
+  }
+  if (x<50, x>40) {
+    l = 85
+  }
+  document.getElementById("randomWillpower").innerHTML = l;
+}
+</script>
+
+<button onclick="RandomizeFunction8()">Randomize</button>
+<p>Your Charisma Is:</p>
+<p id="randomCharisma"></p>
+
+<script>
+RandomizeFunction8()
+
+function RandomizeFunction8() {
+  var x = Math.random() * 30;
+  if (x<10, x>0) {
+    z = 0
+  }
+  if (x<20, x>10) {
+    z = 25
+  }
+  if (x<30, x>20) {
+    z = 80
+  }
+
+  document.getElementById("randomCharisma").innerHTML = z;
+}
+</script>
+
+</section>
+
+
+
+</section>
+  </body>
+
+</html>
